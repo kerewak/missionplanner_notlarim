@@ -28,3 +28,19 @@ Bu görev, uçuş öncesinde kullanıcı tarafından tanımlanan bir dizi ara no
 Otomatik modda, otonom pilot sistemi planlanan görevi yerine getirmek için uçağın tam kontrolünü ele alır.
 Otomatik mod, hava haritalama, ölçümleme ve hassas navigasyon ve görev yürütmenin manuel müdahale olmadan gerekli olduğu bazı karmaşık görevler gibi işler için kullanışlıdır.
 
+Loiter mod:
+Bekleme modu, uçağın belirli bir nokta etrafında daire çizmesine olanak tanır.
+Bekleme modu etkinleştirildiğinde, uçak belirlenen nokta etrafında kullanıcı tarafından tanımlanan yarıçap ve irtifada döner.
+Bekleme modunun temel özelliği, hedef nokta etrafında sabit bir irtifa ve yarıçapı korumaktır.
+Bekleme modu, özellikle uçakları belirli bir alanda tutarak karar vermek için zaman kazandırmak açısından kullanışlıdır.
+
+RTL mod:
+RTL modu, uçağın kalkış noktasına veya belirlenmiş bir eve dönüş konumuna geri dönmesini sağlayan bir komuttur.
+RTL modu etkinleştirildiğinde, uçak kalkış noktasına veya eve dönüş konumuna geri döner ve eve dönüş konumunun üzerinde süzülür.
+RTL modu, bilinen bir konuma geri dönmek için tasarlanmış güvenli bir özelliktir.
+Genellikle transmitter(verici) ile uçak arasında kontrol sinyalinin kaybolması gibi senaryolarda kullanılır.
+
+
+
+
+
