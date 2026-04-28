@@ -1,5 +1,6 @@
 Simulation sekmesinde hangi araç üzerine simülasyon yapmak istiyorsak onu seçiyoruz.
 Plan sekmesinde waypointlerin grad seviyelerini minimumda tutmaya çalışmalıyız. Dik inişler istemeyiz.
+Plan sekmesinde Distance pil bitinceye kadar ne kadar uzağa uçabileceğini gösterir.
 Uçak seçtiysek uçağı nasıl hareket ettiririz
 Simulation sekmesinde Sim Speed kısmından uçağın hızıyla oynayabiliriz (Uçağın gerçek hızını değil simülasyonun hızını etkiler).
 sağ tıka bastığımızda çeşitli komutlar görürüz.
