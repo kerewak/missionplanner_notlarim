@@ -1,0 +1,17 @@
+ ACRO_LOCKING, ArduPilot’un Acro (Akrobatik) uçuş modunda aracın tutumunu (attitude) ne kadar "inatçı" bir şekilde koruyacağını belirleyen parametredir.
+Kısaca özeti: Siz kumanda çubuğunu bıraktığınızda, aracın o anki açısını kilitler ve dış etkenlere (rüzgar vb.) rağmen o açıda kalmaya çalışır.
+0: Kilitleme yok. (Klasik Acro)
+
+1: Basit kilitleme. (Euler tabanlı, bazen sert manevralarda sapma yapabilir)
+
+2: Tam Kilitleme. (Quaternion tabanlı, en kararlı ve pürüzsüz olanı)
+
+pitch => yukarı aşağı
+ACRO_PITCH_RATE, ArduPilot'un Acro modunda kumanda çubuğunu (pitch) en sona ittiğinizde aracın saniyede kaç derece döneceğini belirleyen parametredir.
+
+rol => sağa sola
+ACRO_ROLL_RATE, Kumanda çubuğunu sağa veya sola tam yasladığınızda, aracın kendi ekseni etrafında saniyede kaç derece döneceğini belirler.
+
+ACRO_YAW_RATE, aracın Yaw (Sapma) eksenindeki dönüş hızını belirler.
+
+
