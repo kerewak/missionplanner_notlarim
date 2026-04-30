@@ -1,17 +1,30 @@
- ACRO_LOCKING, ArduPilot’un Acro (Akrobatik) uçuş modunda aracın tutumunu (attitude) ne kadar "inatçı" bir şekilde koruyacağını belirleyen parametredir.
-Kısaca özeti: Siz kumanda çubuğunu bıraktığınızda, aracın o anki açısını kilitler ve dış etkenlere (rüzgar vb.) rağmen o açıda kalmaya çalışır.
-0: Kilitleme yok. (Klasik Acro)
+ACRO_BAL_PITCH (ve eşi olan ACRO_BAL_ROLL), ArduCopter sisteminde ACRO modunu tam bir "yarış drone'u" modu olmaktan çıkarıp,
+onu daha kontrol edilebilir bir hale getiren "Dengeleme" (Leveling) parametresidir.
 
-1: Basit kilitleme. (Euler tabanlı, bazen sert manevralarda sapma yapabilir)
+ACRO_BAL_ROLL, ACRO_BAL_PITCH parametresinin tam olarak sağ-sol (Roll) eksenindeki karşılığıdır.
 
-2: Tam Kilitleme. (Quaternion tabanlı, en kararlı ve pürüzsüz olanı)
+ACRO_OPTIONS, ArduCopter (multirotor) sisteminde ACRO modunun davranışını özelleştiren ve ek özellikleri açıp kapatmanızı sağlayan bir "bitmask" (seçenekler) parametresidir.
+Bu parametre, standart ACRO kontrolüne ek olarak pilotun konforunu veya güvenliğini artıracak bazı akıllı özellikleri devreye sokar.
 
-pitch => yukarı aşağı
-ACRO_PITCH_RATE, ArduPilot'un Acro modunda kumanda çubuğunu (pitch) en sona ittiğinizde aracın saniyede kaç derece döneceğini belirleyen parametredir.
+ACRO_RP_EXPO, drone’un Roll (sağ-sol) ve Pitch (ön-arka) eksenlerindeki kumanda çubuklarının (stick) tepki eğrisini belirleyen bir parametredir.
+Kısacası, kumanda kolunun merkezindeki hassasiyeti yumuşatırken, kolu sona ittiğinizde hala tam performansı almanızı sağlar.
 
-rol => sağa sola
-ACRO_ROLL_RATE, Kumanda çubuğunu sağa veya sola tam yasladığınızda, aracın kendi ekseni etrafında saniyede kaç derece döneceğini belirler.
+ACRO_RP_RATE, bir drone'un ACRO modundayken Roll (sağ-sol) ve Pitch (ön-arka) eksenlerinde saniyede kaç derece dönebileceğini (açısal hızını) belirleyen en temel performans parametresidir.
 
-ACRO_YAW_RATE, aracın Yaw (Sapma) eksenindeki dönüş hızını belirler.
+ACRO_RP_RATE_TC, ArduCopter sisteminde ACRO modundaki kumanda tepkisinin zaman sabitini (Time Constant) belirleyen bir parametredir.
+
+
+ACRO_THR_MID, ArduCopter sisteminde ACRO modunda uçarken gaz kolunun (throttle) orta noktasının neyi temsil edeceğini belirleyen bir parametredir.
+Normalde birçok uçuş modunda gaz kolu %50 seviyesindeyken drone'un havada asılı kalması (hover) beklenir. Ancak ACRO modunda, bu "orta nokta" davranışını özelleştirmek gerekebilir.
+
+ACRO_TRAINER, ArduCopter’de ACRO modunun o sınırsız ve özgür yapısına bir "güvenlik ağı" veya "eğitmen yardımı" ekleyen çok kritik bir parametredir.
+Yeni başlayanlar veya ACRO moduna yeni ısınanlar için drone'un tamamen ters dönüp yere çakılmasını önleyen koruma seviyelerini belirler.
+
+ACRO_Y_EXPO, drone’un Yaw (kendi ekseni etrafında dönme) ekseni için belirlenmiş olan üstel (exponential) tepki eğrisi parametresidir.
+
+ACRO_Y_RATE, drone'un ACRO modundayken kendi ekseni etrafında (Yaw - Burun yönü) saniyede maksimum kaç derece dönebileceğini belirleyen hız parametresidir.
+
+ACRO_Y_RATE_TC, Yaw (kendi ekseni etrafında dönme) ekseni için belirlenmiş olan zaman sabitidir (Time Constant).
+
 
 
